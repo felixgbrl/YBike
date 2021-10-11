@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/styletest.css">
+  <link rel="stylesheet" href="../style/headerstyle.css">
+  <script type="text/javascript" src="../script/script.js" async></script>
+
+  <title>Reserves</title>
+</head>
+<body>
+  <nav class="header">
+
+    <div id="logo">  
+        <img id="img.logo" src="../../Assets/YBIKE logo transparent cropped.png" alt="">
+        
+
+    </div>
+
+    <!-- NAV BAR KANAN -->
+    <div id="navigation">
+        <ul>
+            <li> <a href="homepage.html">Home</a> </li>
+
+            <li> <div id="drop">
+                    <a href="#">Products</a> 
+                            <div id="dropdown-menu">
+                                <a href="vixian.html">Vixian</a>
+                                <a href="kawasako.html">Kawasako</a>
+                            </div>   
+
+                </div>
+            </li>
+
+
+            <li> <a href="gallery.html">Gallery</a> </li>
+            <li> <a href="reserves.html">Reserve</a> </li>
+
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+
+
+ <form class="form" id="form">
+      <h2>Please fill this form to complete your transaction</h2>
+     
+     
+      <div class="input">
+        <label for="motor" class="labelmotor">Select Motor</label>
+
+        <input type="radio" name="motor"  id="vixian" value="vixian">
+        <label for="vixian" class="motor1">Vixian</label>
+
+        <input type="radio" name="motor"  id="kawasako" value="kawasako">
+        <label for="kawasako" class="motor2">Kawasako</label>
+    </div>
+ 
+      <div class="input">
+        <input type="text" class="quantity" id="quantity" placeholder="Quantity">
+      </div>
+      <div class="input">
+        <div class="color-select">
+          <select class="color-sel" id="select1">
+            <option value="0">Select Color:</option>
+            <option value="color1" id="black">Black</option>
+            <option value="color2" id="red">Red</option>
+            <option value="color3" id="blue">Blue</option>
+            <option value="color4" id="yellow">Yellow</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input">
+        <input type="text" class="year" id="year" placeholder="Year"> 
+      </div>
+
+      <div class="input">
+        <label for="engine" class="label">Engine</label>
+
+        <input type="radio" name="engine"  id="type1" value="type1">
+        <label for="type1" class="engine1">150CC</label>
+
+        <input type="radio" name="engine"  id="type2" value="type2">
+        <label for="type2"class="engine2">250CC</label>
+    </div>
+
+      <div class="input" >
+        <input type="text" class="name" id="name" placeholder="Name">
+      </div>
+      <div class="input">
+        <input type="tel" class="telephone" id="telephone" placeholder="Telephone">
+        <!-- <input type="text" clas="telephone" id="myform_phone" name="phone" placeholder="Phone">
+        <div id="phone_error" class="error hidden">Please enter a valid phone number</div> -->
+  </div>
+      </div>
+
+      <div class="input">
+        <textarea class="address" id="address" cols="30" rows="10" placeholder="Address"></textarea>
+      </div>
+
+       <button class="submitBtn">Submit</button>
+
+       <div id="error"></div>
+  
+      </form>
+
+
+
+
+
+  
+
+
+
+</body>
+</html>
