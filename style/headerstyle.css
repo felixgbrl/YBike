@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    padding : 0;
+    margin : 0;
+    font-family : sans-serif;
+    font-style : avenir;
+}
+
+/* HEADER */
+nav{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    flex-direction: row;
+
+    background-color : rgb(31, 31, 34);
+    color: white;
+    height: 140px;
+    padding-top: 5px;
+}
+
+/* LOGO */
+#logo{
+    margin : 10px 0 15px 35px;
+    padding-left : 25px;
+    padding-right : 25px;
+    width : 58px;
+    height : 66px;
+}
+
+#logo > img {
+    width : 58px;
+    height : 66px;
+}
+
+/* NAV BAR (KANAN) */
+#navigation{ 
+    position: relative;
+
+}
+
+#navigation ul{
+    display : flex;
+    margin-right: 25px;
+
+}
+
+#navigation li{
+    list-style : none; 
+
+}
+
+#navigation li a {
+    color: white;
+    padding : 25px;
+    display : block;
+    text-decoration : none;
+    font-size : 24px;
+}
+
+
+#navigation li:hover{
+    background-color : rgb(150, 26, 26);  
+}
+
+/* DROP DOWN NAV BAR  */
+
+#navigation #dropdown-menu{
+    position: absolute;
+    background:rgb(31, 31, 34);
+    display:none;
+   
+}
+
+#navigation #dropdown-menu a{
+   font-size : 20.5px; 
+}
+
+
+#navigation #drop:hover #dropdown-menu {
+    display : block;
+}
+
+#dropdown-menu a:hover{
+    background-color: rgb(150, 26, 26);
+}
+
+@media(max-width : 750px){
+    .header {
+        flex-direction: column;
+        padding : 10px 20px;
+        margin-bottom : 70px;
+        float : none; 
+        width : 100%l
+    }
+    .header a {
+        float : none;
+        display : block;
+
+    }
+    #navigation{
+        float:none;
+        width:100%; 
+        margin: 0;
+        padding : 0;
+    }
+   
+    li{
+        width:100%;
+        
+    }
+}

@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-style : arial;
+    font-family: sans-serif;
+}
+
+
+nav{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    flex-direction: row;
+
+    background-color : rgb(31, 31, 34);
+    color: white;
+    height: 140px;
+    padding-top: 5px;
+}
+
+/* LOGO */
+#logo{
+    margin : 10px 0 15px 35px;
+    padding-left : 25px;
+    padding-right : 25px;
+    width : 58px;
+    height : 66px;
+}
+
+#logo > img {
+    width : 58px;
+    height : 66px;
+}
+
+/* NAV BAR (KANAN) */
+#navigation{ 
+    position: relative;
+
+}
+
+#navigation ul{
+    display : flex;
+    margin-right: 25px;
+
+}
+
+#navigation li{
+    list-style : none; 
+
+}
+
+#navigation li a {
+    color: white;
+    padding : 25px;
+    display : block;
+    text-decoration : none;
+    font-size : 24px;
+}
+
+
+#navigation li:hover{
+    background-color : rgb(150, 26, 26);  
+}
+
+/* DROP DOWN NAV BAR  */
+
+#navigation #dropdown-menu{
+    position: absolute;
+    background:rgb(31, 31, 34);
+    display:none;
+   z-index: 99;
+}
+
+#navigation #dropdown-menu a{
+   font-size : 20.5px; 
+}
+
+
+#navigation #drop:hover #dropdown-menu {
+    display : block;
+}
+
+#dropdown-menu a:hover{
+    background-color: rgb(150, 26, 26);
+}
+
+
+.slider-container {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    width: 400%;
+    margin-left: 0px;
+}
+
+
+.upper-image-container > img {
+    width: 100%;
+}
+
+.upper-image-container {
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    z-index: -99;
+}
+
+.upper-content-text {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-style : arial;
+    font-family: sans-serif;
+}
+
+.upper-content-text2 {
+    position: absolute;
+    bottom: 15px;
+    left: 130px;
+    font-style : arial;
+    font-family: sans-serif;
+}
+
+.upper-content-profile {
+    position: absolute;
+    width: 300px;
+    bottom: 20%;
+    left: 55%;
+}
+
+.upper-content-profile h3 {
+    font-size: 1.5vw;
+    font-style : arial;
+    font-family: sans-serif;
+}
+
+.news-text {
+    position: absolute;
+    top: 30px;
+    right: 40%;
+}
+
+.news-text h4 {
+    font-size: 4vw;
+    font-style : arial;
+    font-family: sans-serif;
+}
+
+.expo-text {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.expo-text h4 {
+    font-size: 2vw;
+    font-style : arial;
+    font-family: sans-serif;
+}
+
+.expo-text h5 {
+    font-size: 1.5vw;
+    font-style : arial;
+    font-family: sans-serif;
+}
+
+.expo-text2 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.expo-text2 h4 {
+    font-size: 2vw;
+    font-style : arial;
+    font-family: sans-serif;
+}
+
+.expo-text2 h5 {
+    font-size: 1.5vw;
+    font-style : arial;
+    font-family: sans-serif;
+}
+
+#next {
+    background-color: #cfcfcf;
+    color: white;
+    padding: 25px 45px;
+    text-align: center;
+    font-size: 25px;
+    font-style : arial;
+}
+
+.gambar-aspal-background > img {
+    width: 100%;
+}
+
+.lower-image-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gambar-aspal-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.vixian > img {
+    width: 33vw;
+    height: 17vw;
+}
+
+.vixian {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.kawasako > img {
+    width: 29vw;
+    height: 15vw;
+}
+
+.kawasako {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.ourproduct {
+    position: absolute;
+    left: 45%;
+    top: 5%;
+    color: white;
+    font-style : arial;
+    font-family: sans-serif;
+}
+
+.vixian-text {
+    position: absolute;
+    bottom: 45%;
+    left: 22%;
+    color: white;
+    font-size: 1.5vw;
+    font-style : arial;
+    font-family: sans-serif;
+}
+
+.kawasako-text {
+    position: absolute;
+    bottom: 45%;
+    right: 17%;
+    color: white;
+    font-size: 1.5vw;
+    font-style : arial;
+    font-family: sans-serif;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: #6d6d6d;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer h5 {
+    text-align: center;
+    font-size: 1.5vw;
+    justify-content: center;
+    font-style : arial;
+    font-family: sans-serif;
+}
+
+@media(max-width : 750px){
+    .header {
+        flex-direction: column;
+        padding : 10px 20px;
+        margin-bottom : 70px;
+        float : none; 
+        width : 100%l
+    }
+    .header a {
+        float : none;
+        display : block;
+
+    }
+    #navigation{
+        float:none;
+        width:100%; 
+        margin: 0;
+        padding : 0;
+    }
+   
+    li{
+        width:100%;
+        
+    }
+}
